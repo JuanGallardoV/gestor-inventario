@@ -1,0 +1,170 @@
+/*@charset "ISO-8859-1";*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins',
+}
+/*Fondo 1*/
+/* body{
+	background-image: linear-gradient(135deg,#00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
+	background-size: 500%;
+    animation: animado 10s infinite;
+    
+    Para que no se repita el patron y sea toda la pagina
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+Para que no se repita el patron y sea toda la pagina
+html{
+	height: 100%;
+}
+nav{
+	Cambiarlo de color para que sea mas legible la letra o simplemente cambiar el estilo de la letra
+	background-image: linear-gradient(135deg,#00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
+	background-size: 500%;
+    animation: animado 10s infinite;
+}
+@keyframes animado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+} */
+/* #keyword{ */
+/* 	width: 200px;	 */
+/* } */
+
+.card{
+	background-color:rgba(255,255,255,0.7);	
+}
+nav{
+	 background: linear-gradient(#FF3192, #39BBDC);
+}
+.container-animated {
+    display: block;
+    height: 100vh;
+    background: linear-gradient(#39BBDC, #FF3192);
+    color: #000000;
+    position: relative;
+    /*overflow: hidden;*/
+    
+}
+
+.content-section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.content-section .content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    z-index: 5;
+}
+
+.animation {
+    z-index: 1;
+}
+span.four,
+span.two,
+span.three,
+span.one {
+    border: 0;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    animation: fly 7s linear infinite normal both;
+}
+span.one {
+    width: 100px;
+    height: 100px;
+    background-color: #E86BFF;
+    bottom: -100px;
+}
+span.two {
+    width: 70px;
+    height: 70px;
+    background-color: #90BAFF;
+    bottom: -70px;
+}
+span.three {
+    width: 50px;
+    height: 50px;
+    background-color: #FF5071;
+    bottom: -50px;
+}
+span.four {
+    width: 20px;
+    height: 20px;
+    background-color: #67F3D4;
+    bottom: -20px;
+}
+@keyframes fly {
+    from {
+        transform: rotate(0deg);
+        bottom: 0;
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    to {
+        transform: rotate(360deg);
+        bottom: calc(100% + 100px);
+        opacity: 0;
+    }
+}
+
+.animation span:nth-child(1) {
+    left: 20%;
+    animation-delay: 3s;
+}
+.animation span:nth-child(2) {
+    left: 50%;
+}
+.animation span:nth-child(3) {
+    left: 35%;
+    animation-delay: 5s;
+}
+.animation span:nth-child(4) {
+    left: 75%;
+    animation-delay: 1s;
+}
+.animation span:nth-child(6) {
+    left: 85%;
+    animation-delay: 3s;
+}
+.animation span:nth-child(7) {
+    left: 90%;
+    animation-delay: 5s;
+}
+.animation span:nth-child(8) {
+    left: 65%;
+}
+.animation span:nth-child(9) {
+    left: 60%;
+}
+.animation span:nth-child(10) {
+    left: 75%;
+    animation-delay: 6s;
+}
+.animation span:nth-child(11) {
+    left: 10%;
+}
+.animation span:nth-child(12) {
+    left: 45%;
+    animation-delay: 3s;
+}
